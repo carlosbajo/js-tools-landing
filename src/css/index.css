@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+}
+
+.divisor {
+    height: 2px;
+    background-color: #33333342;
+    width: 100%;
+    /* border: 2px solid; */
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.tools-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.tool__link {
+    border-radius: 8px;
+    border: 2px solid rgba(29, 29, 29, 0.719);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool__link:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+    cursor: pointer;
+}
+
+.tool__link:hover .tool__image {
+    transform: scale(1);
+}
+
+.tool__image {
+    transition: transform 0.3s ease;
+    transform: scale(0.8);
+}

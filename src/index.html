@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/index.js" defer></script>
+        <title>JS Tools | DevDraws</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-rows: 120px 1fr auto; /* Header, Main, Footer */
+                min-height: 100vh; /* Ensures the grid takes up at least the viewport height */
+                margin: 0;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .header__title {
+                font-family: 'Caveat', cursive;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            .title__JS {
+                font-family: sans-serif;
+                background-color: white;
+                height: 100%;
+                color: #333;
+                border-left: #333 solid 2px;
+                border-top: #333 solid 2px;
+                border-bottom: #333 solid 2px;
+                box-sizing: border-box;
+                display: inline-block;
+            }
+
+            .header__logo {
+                user-select: none;
+                background-color: #333;
+                width: 110px;
+                color: white;
+                display: flex;
+            }
+
+            header,
+            main,
+            footer {
+                color: black;
+                max-width: 1000px;
+                padding: 10px;
+                width: 100vw;
+                margin: 0 auto; /* Centers the header within the available space */
+                box-sizing: border-box;
+            }
+
+            main {
+                background-color: white;
+                color: black;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="header__logo">
+                <!-- <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+                    width="50px"
+                    height="50px"
+                /> -->
+                <h1 class="header__title">
+                    <span class="title__JS">JS</span><span>Tools</span>
+                </h1>
+            </div>
+            <p>
+                Just some compilations of tools that could be helpful for any
+                web developer, enjoy :)
+            </p>
+        </header>
+        <main>
+            <div class="divisor"></div>
+            <ul class="tools-list">
+                <li class="tool">
+                    <a class="tool__link">
+                        <img
+                            width="50px"
+                            height="auto"
+                            class="tool__image"
+                            src="https://cdn.icon-icons.com/icons2/2518/PNG/512/tool_icon_151041.png"
+                            alt="wrench"
+                        />
+                        Tool 1
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <footer></footer>
+    </body>
+</html>
